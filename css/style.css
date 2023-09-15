@@ -1,8 +1,199 @@
-:root{
-    --accent-color: #2196F3;
-    --text-color: #FFFFFF;
-    --background-color: #2F303A;
-    --secondbackground: #F5F4FA;
-    --texttitle-color: #212121;
-    --subtitle-color: #757575;
+:root {
+  --accent-color: #2196f3;
+  --text-color: #ffffff;
+  --background-color: #2f303a;
+  --secondbackground: #f5f4fa;
+  --texttitle-color: #212121;
+  --subtitle-color: #757575;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.header-title {
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+}
+
+.header-item {
+    color: var(--texttitle-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    }
+
+.header-items {
+    color: var(--subtitle-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+}
+
+.header-link {
+    color: var(--texttitle-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+}
+
+.header-links {
+    color: var(--subtitle-color);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+}
+
+.effective {
+    background:var(--background-color);   
+}
+
+.effective-title {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 60px; /* 136.364% */
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+}
+
+.effective-btn {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.96px;
+    border-radius: 4px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+    color: var(--texttitle-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.section-text {
+    color:var(--subtitle-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.42px;
+}
+
+.todo-title {
+    color: var(--texttitle-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+}
+
+.todo-foto {
+    width: 370px;
+    height: 294px;
+    flex-shrink: 0;
+}
+
+.team {
+    background:var(--secondbackground);
+}
+
+.team-title {
+    color: var(--texttitle-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+}
+
+.team-foto {
+    width: 270px;
+    height: 260px;
+    flex-shrink: 0;    
+}
+
+.team-subtitle {
+    color:var(--texttitle-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.48px;    
+}
+
+.team-text {
+    color: var(--subtitle-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.48px;    
+}
+
+.footer {
+    background:var(--background-color);
+}
+
+.footer-title {
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;    
+}
+
+.footer-text {
+    color:var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.42px;   
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.42px;   
+}
+
+.buttons-btn {
+    color:var(--texttitle-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: 0.48px;   
+    border-radius: 4px;
+    background:var(--secondbackground);    
+}
+
+.everyone-foto {
+    width: 370px;
+    height: 294px;
+    flex-shrink: 0;   
+}
+
+.everyone-title {
+    color:var(--texttitle-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px; /* 200% */
+    letter-spacing: 1.08px;    
+}
+
+.everyone-name {
+    color: var(--subtitle-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.48px;    
 }
