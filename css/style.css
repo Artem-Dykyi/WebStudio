@@ -100,14 +100,12 @@ body {
 
 
 .effective {
-    background:var(--background-color); 
-    height: 600px; 
+    background:var(--background-color);  
     display: flex; 
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
-    margin-bottom: 30px;
-
+    padding-bottom: 280px;
 }
 
 .effective-title {
@@ -134,18 +132,20 @@ body {
     border-radius: 4px;
     background: var(--accent-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-bottom: 200px;
     padding: 10px 32px;
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
 
-.section-list {
-    display: flex;
-    justify-content: start;
+.section {
     padding-bottom: 118px;
     padding-top: 94px;
+}
+
+.section-list {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .section-title {
@@ -154,6 +154,8 @@ body {
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    max-width: 270px;
+    margin-bottom: 10px;
 }
 
 .section-text {
@@ -163,12 +165,17 @@ body {
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.42px;
     max-width: 270px;
+    display: flex;
+    gap: 30px;
+}
+
+.section-item {
+    max-width: 270px;
 }
 
 .todo-list {
     display: flex;
     justify-content: space-around;
-    padding-top: 50px;
 }
 
 .todo-title {
@@ -177,30 +184,30 @@ body {
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
 }
 
 .todo-foto {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .team-list {
     display: flex;
     justify-content: space-around;
-    padding-top: 94px;
 }
 
 .team {
     background:var(--secondbackground);
-    height: 648px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-item {
     border-radius: 0px 0px 4px 4px;
 background: #FFF;
-/* material shadow v1 */
 box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -210,14 +217,14 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
-    padding-top: 94px;
+    margin-bottom: 50px; 
 }
 
 .team-foto {
     width: 270px;
     height: 260px;
-    flex-shrink: 0;   
-    margin-bottom: 30px; 
+    flex-shrink: 0; 
+     margin-bottom: 30px; 
 }
 
 .team-subtitle {
@@ -235,7 +242,6 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;  
-    pa-top: 10px;  
     margin-bottom: 30px;
     
 }
@@ -268,9 +274,6 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     letter-spacing: 0.42px;   
 }
 
-
-
-
 .buttons-list {
     display: flex;
     gap: 8px;
@@ -288,8 +291,8 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     border-radius: 4px;
     border-style: none;
     background:var(--secondbackground);
-    margin-bottom: 50px;
     padding:6px 22px;
+    margin-bottom: 50px;
     margin-top: 94px;
 }
 
@@ -303,6 +306,10 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     font-weight: 500;
     line-height: 26px; /* 162.5% */
     letter-spacing: 0.48px;  
+}
+
+.everyone {
+    padding-bottom: 94px;
 }
 
 .everyone-item {
@@ -332,7 +339,7 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     letter-spacing: 1.08px; 
     margin-left: 24px;  
     margin-right: 24px;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
 }
 
 .everyone-name {
@@ -343,13 +350,12 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     letter-spacing: 0.48px; 
     margin-left: 24px;  
     margin-right: 24px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 footer {
-    margin-top: 94px;
-    height: 252px;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-title {
