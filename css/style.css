@@ -23,6 +23,11 @@ body {
     align-items: center;
 }
 
+.header {
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+
 .header-title {
     color: var(--accent-color);
     font-family: Raleway;
@@ -36,13 +41,15 @@ body {
     color:var(--texttitle-color);
 }
 
+.logo2 {
+    color: var(--text-color);
+}
+
 .header-list {
     display: flex;
     justify-content: left;
     gap: 50px;
     margin-right: 344px;
-    margin-bottom: 32px;
-    margin-top: 32px;
 }
 
 .header-list2 {
@@ -105,7 +112,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 }
 
 .effective-title {
@@ -173,9 +180,14 @@ body {
     max-width: 270px;
 }
 
+
 .todo-list {
     display: flex;
     justify-content: space-around;
+}
+
+.todo {
+    padding-bottom: 94px;
 }
 
 .todo-title {
@@ -191,7 +203,6 @@ body {
     width: 370px;
     height: 294px;
     flex-shrink: 0;
-    padding-bottom: 94px;
 }
 
 .team-list {
@@ -209,6 +220,7 @@ body {
     border-radius: 0px 0px 4px 4px;
 background: #FFF;
 box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+padding-bottom: 30px;
 }
 
 .team-title {
@@ -224,7 +236,7 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     width: 270px;
     height: 260px;
     flex-shrink: 0; 
-     margin-bottom: 30px; 
+    margin-bottom: 30px; 
 }
 
 .team-subtitle {
@@ -242,7 +254,6 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;  
-    margin-bottom: 30px;
     
 }
 
@@ -278,6 +289,8 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     display: flex;
     gap: 8px;
     justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 
 
@@ -291,9 +304,7 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     border-radius: 4px;
     border-style: none;
     background:var(--secondbackground);
-    padding:6px 22px;
-    margin-bottom: 50px;
-    margin-top: 94px;
+    padding:6px 22px;+
 }
 
 .buttons-btn:hover {
@@ -350,7 +361,7 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0
     letter-spacing: 0.48px; 
     margin-left: 24px;  
     margin-right: 24px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 footer {
@@ -361,19 +372,19 @@ footer {
 .footer-title {
     width: 145px;
     height: 31px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .footer-text {
     width: 231px;
     height: 21px;
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 .footer-list {
     width: 231px;
     height: 31px;
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 .footer-item {
