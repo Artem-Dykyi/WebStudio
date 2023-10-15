@@ -12,7 +12,8 @@ body {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
@@ -325,21 +326,20 @@ padding-bottom: 30px;
 
 .everyone-item {
     border: 1px solid #EEE;
+    flex-basis: calc((100% - 60px)/ 3);
 }
 
 .everyone-list {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-
 }
 
 
 .everyone-foto {
-    width: 370px;
-    height: 294px;
-    flex-shrink: 0; 
-    margin-bottom: 20px;
+    /* width: 370px; */
+    /* height: 294px; */
+    padding-bottom: 20px;
 }
 
 .everyone-title {
@@ -350,7 +350,7 @@ padding-bottom: 30px;
     letter-spacing: 1.08px; 
     margin-left: 24px;  
     margin-right: 24px;
-    margin-bottom: 4px;
+    padding-bottom: 4px;
 }
 
 .everyone-name {
