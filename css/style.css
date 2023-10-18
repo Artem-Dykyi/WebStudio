@@ -326,7 +326,11 @@ padding-bottom: 30px;
 
 .everyone-item {
     border: 1px solid #EEE;
-    flex-basis: calc((100% - 60px)/ 3);
+    flex-grow: 1;
+    flex-basis: calc((100% - 60px)/ 4);
+
+    /* flex-basis: calc((100% - 60px)/ 4); або     flex-basis: calc((100% - 90px)/ 3); */
+   
 }
 
 .everyone-list {
