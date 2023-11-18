@@ -25,8 +25,8 @@ body {
 }
 
 .header {
-    padding-bottom: 32px;
-    padding-top: 32px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     border: 1px solid #ECECEC;
 }
 
@@ -51,7 +51,7 @@ body {
     display: flex;
     justify-content: left;
     gap: 50px;
-    margin-right: 344px;
+    margin-right: auto;
 }
 
 .header-list2 {
@@ -372,7 +372,7 @@ padding-bottom: 30px;
     border-radius: 4px;
     border-style: none;
     background:var(--secondbackground);
-    padding:6px 22px;+
+    padding:6px 22px;
 }
 
 .buttons-btn:hover {
@@ -403,7 +403,6 @@ padding-bottom: 30px;
     border: 1px solid #EEE;
     background: #FFF;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-    
 }
 
 .everyone-list {
