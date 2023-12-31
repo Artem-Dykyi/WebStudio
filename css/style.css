@@ -61,11 +61,11 @@ body {
     gap: 50px;
 }
 
-.header-list2 .header-items:hover .header-svg {
+.header-list2 .header-links:hover .header-svg {
     fill: var(--accent-color);
 }
 
-.header-list2 .header-items:focus .header-svg {
+.header-list2 .header-links:focus .header-svg {
     fill: var(--accent-color);
 }
 
