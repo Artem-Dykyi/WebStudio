@@ -44,16 +44,20 @@
               ><svg width="16px" height="12px" class="header-svg">
                 <use
                   href="./symboldefts.svg/symbol-defs.svg#icon-envelope2"
-                ></use></svg>
-                <span>info@devstudio.com</span></a>
+                ></use>
+              </svg>
+              <span>info@devstudio.com</span></a
+            >
           </li>
           <li class="header-items">
             <a class="header-links" href="tel:+380961111111"
               ><svg width="10px" height="16px" class="header-svg">
                 <use
                   href="./symboldefts.svg/symbol-defs.svg#icon-smartphone2"
-                ></use></svg>
-                <span>+38 096 111 11 11</span></a>
+                ></use>
+              </svg>
+              <span>+38 096 111 11 11</span></a
+            >
           </li>
         </ul>
       </div>
@@ -62,71 +66,70 @@
       <section class="effective">
         <div class="container">
           <h1 class="effective-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="effective-btn" type="button">Замовити послугу</button>
-          <div class="effective-modal">
-          <div class=" effective-backdrop">
-            <form action="" class="effective-form">
-              <button class="modal-btn-cross">
-                <svg width="18px" height="18px" class="modal-svg">
-                  <use href="./symboldefts.svg/symbol-defs.svg#cross-modal"></use>
-                </svg>
-              </button>
-              <h2 class="effective-form-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <button class="effective-btn" type="button" data-modal-open>Замовити послугу</button>
+          <div class="effective-backdrop is-hidden" data-modal>
+            <div class="effective-modal">
+              <form action="" class="effective-form">
+                <button class="modal-btn-cross" data-modal-close>
+                  <svg width="18px" height="18px" class="modal-svg">
+                    <use
+                      href="./symboldefts.svg/symbol-defs.svg#cross-modal"
+                    ></use>
+                  </svg>
+                </button>
+                <h2 class="effective-form-title">
+                  Залиште свої дані, ми вам передзвонимо
+                </h2>
                 <ul class="effective-list">
                   <li class="effective-item">
-                    <label for=""  class="effective-name"> Ім'я</label>
-                    <input type="text" class="effective-input">
+                    <label for="" class="effective-name"> Ім'я</label>
+                    <input type="text" class="effective-input"  required/>
                     <svg width="18px" height="18px" class="effective-name-svg">
-                      <use href="./symboldefts.svg/symbol-defs.svg#person-modal"></use>
+                      <use
+                        href="./symboldefts.svg/symbol-defs.svg#person-modal"
+                      ></use>
                     </svg>
                   </li>
                   <li class="effective-item">
                     <label for="" class="effective-name">Телефон</label>
-                    <input type="phone"class="effective-input">
+                    <input type="phone" class="effective-input"  required/>
                     <svg width="18px" height="18px" class="effective-name-svg">
-                      <use href="./symboldefts.svg/symbol-defs.svg#phone-modal"></use>
+                      <use
+                        href="./symboldefts.svg/symbol-defs.svg#phone-modal"
+                      ></use>
                     </svg>
                   </li>
                   <li class="effective-item">
                     <label for="" class="effective-name">Пошта</label>
-                    <input type="email" class="effective-input">
+                    <input type="email" class="effective-input"  required/>
                     <svg width="18px" height="18px" class="effective-name-svg">
-                      <use href="./symboldefts.svg/symbol-defs.svg#email-modal"></use>
+                      <use
+                        href="./symboldefts.svg/symbol-defs.svg#email-modal"
+                      ></use>
                     </svg>
                   </li>
                   <li class="effective-item">
                     <label for="" class="effective-name">Коментар</label>
-                    <input placeholder="Введіть текст" type="text" class="effective-input">
+                    <input
+                      placeholder="Введіть текст"
+                      type="text"
+                      class="effective-input"
+                      required/>
                   </li>
                 </ul>
-                  <input type="checkbox" class="effective-chek">
-                  <label for="" class="effective-text">Погоджуюся з розсилкою та приймаю <span class="effective-link"><a class="effective-link" href=""> Умови договору</a></span></label>
-                <button type="submit" class="effective-btn-modal">Відправити</button>
-            </form>
+                <input type="checkbox" class="effective-chek" />
+                <label for="" class="effective-text"
+                  >Погоджуюся з розсилкою та приймаю
+                  <span class="effective-link"
+                    ><a class="effective-link" href=""> Умови договору</a></span
+                  ></label
+                >
+                <button type="submit" class="effective-btn-modal">
+                  Відправити
+                </button>
+              </form>
+            </div>
           </div>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
       </section>
       <section class="section">
@@ -424,19 +427,28 @@
           </div>
         </div>
         <div class="subscribe">
+          <form action="" class="footer-form">
           <h2 class="footer-subscribe-title">Підпишіться на розсилку</h2>
           <div class="footer-subscribe-wraper">
-            <input placeholder="E-mail" class="footer-subscribe-input" type="text">
+            <input
+              placeholder="E-mail"
+              class="footer-subscribe-input"
+              type="text"
+              required
+            />
             <button class="footer-subscribe-btn">
-            Підписатися
-             <svg widht="24px" height="24px" class="footer-subscribe-svg">
-                <use href="./symboldefts.svg/symbol-defs.svg#telegram-footer"></use>
-             </svg>
-          </button>
+              Підписатися
+              <svg widht="24px" height="24px" class="footer-subscribe-svg">
+                <use
+                  href="./symboldefts.svg/symbol-defs.svg#telegram-footer"
+                ></use>
+              </svg>
+            </button>
+          </form>
           </div>
-          
         </div>
       </div>
+      <script src="./modal.js" type="module"></script>
       <!-- <div class="subscribe">
         <h2 class="footer-subscribe-title">Підпишіться на розсилку</h2>
         <input class="footer-subscribe-input" type="text">
