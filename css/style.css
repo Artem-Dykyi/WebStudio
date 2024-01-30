@@ -863,6 +863,8 @@ padding-bottom: 30px;
     /* flex-basis: calc((100% - 60px)/ 4); або     flex-basis: calc((100% - 90px)/ 3); */
 }
 
+
+
 .everyone-item:hover .everyone-overlay {
     transform: translatey(0);
   }
@@ -887,8 +889,6 @@ padding-bottom: 30px;
     /* width: 370px; */
     /* height: 294px; */
     padding-bottom: 20px;
-    
-    position: relative;
     overflow: hidden;
 }
 
@@ -907,6 +907,9 @@ padding-bottom: 30px;
     transform: translatey(100%);
     transition: transform 250ms ease-in-out;
 }
+
+
+
 
 .everyone-overlay-text {
     color: #FFF;
