@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -171,15 +172,15 @@
           <h2 class="todo-title">Чим ми займаємося</h2>
           <ul class="todo-list">
             <li class="todo-item">
-              <img class="todo-foto" src="./foto/img-klav.webp" alt="" />
+              <img class="todo-foto" src="./foto/img-klav.webp" alt="" data-aos="zoom-in-up"/>
               <p class="todo-text">Десктопні додатки</p>
             </li>
             <li class="todo-item">
-              <img class="todo-foto" src="./foto/img-riss.webp" alt="" />
+              <img class="todo-foto" src="./foto/img-riss.webp" alt="" data-aos="zoom-in-up"/>
               <p class="todo-text">Мобільні додатки</p>
             </li>
             <li class="todo-item">
-              <img class="todo-foto" src="./foto/img.webp" alt="" />
+              <img class="todo-foto" src="./foto/img.webp" alt="" data-aos="zoom-in-up"/>
               <p class="todo-text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -189,8 +190,8 @@
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
-            <li class="team-item">
-              <img class="team-foto" src="./foto/igor-dem.webp" alt="men" />
+            <li class="team-item" data-aos="zoom-in-right">
+              <img class="team-foto" src="./foto/igor-dem.webp" alt="men"/>
               <h3 class="team-subtitle">Ігор Дем'яненко</h3>
               <p class="team-text">Product Designer</p>
 
@@ -223,7 +224,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-item">
+            <li class="team-item"  data-aos="zoom-in-right">
               <img class="team-foto" src="./foto/olgare.webp" alt="girl" />
               <h3 class="team-subtitle">Ольга Рєпіна</h3>
               <p class="team-text">Frontend Developer</p>
@@ -257,7 +258,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-item">
+            <li class="team-item" data-aos="zoom-in-left">
               <img class="team-foto" src="./foto/tarasov.webp" alt="men" />
               <h3 class="team-subtitle">Микола Тарасов</h3>
               <p class="team-text">Marketing</p>
@@ -291,7 +292,7 @@
                 </li>
               </ul>
             </li>
-            <li class="team-item">
+            <li class="team-item" data-aos="zoom-in-left">
               <img class="team-foto" src="./foto/eraxov.webp" alt="men" />
               <h3 class="team-subtitle">Михайло Єрмаков</h3>
               <p class="team-text">UI Designer</p>
@@ -450,6 +451,10 @@
         </div>
       </div>
       <script src="./modal.js" type="module"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
       <!-- <div class="subscribe">
         <h2 class="footer-subscribe-title">Підпишіться на розсилку</h2>
         <input class="footer-subscribe-input" type="text">
