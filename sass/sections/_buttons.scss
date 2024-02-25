@@ -1,0 +1,104 @@
+.buttons-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+
+.buttons-btn {
+    color:var(--texttitle-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: 0.48px;   
+    border-radius: 4px;
+    border-style: none;
+    background:var(--secondbackground);
+    padding:6px 22px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    animation: buttons-btn 11s linear infinite;
+}
+
+.buttons-item:nth-child(1) .buttons-btn {
+    animation-delay: 1s;
+}
+.buttons-item:nth-child(2) .buttons-btn {
+    animation-delay: 2s;
+}
+.buttons-item:nth-child(3) .buttons-btn {
+    animation-delay: 3s;
+}
+.buttons-item:nth-child(4) .buttons-btn  {
+    animation-delay: 4s;
+}
+.buttons-item:nth-child(5) .buttons-btn  {
+    animation-delay: 5s;
+}
+
+
+@keyframes buttons-btn {
+    0% {
+        transform: translate(0, 0);
+
+    }
+    10% {
+        transform: translate(0, -10px);
+    }
+    20% {
+        transform: translate(0, -20px);
+    }
+    30% {
+        transform: translate(0, -30px);
+    }
+    40% {
+        transform: translate(0, -40px);
+    }
+    50% {
+        transform: translate(0, -50px);
+    }
+    60% {
+        transform: translate(0, -40px);
+    }
+    70% {
+        transform: translate(0, -30px);
+    }
+    80% {
+        transform: translate(0, -20px);
+    }
+    90% {
+        transform: translate(0, -10px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+
+
+.buttons-btn:hover {
+    border-radius: 4px;
+    background: var(--accent-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    color: var(--text-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: 0.48px;  
+}
+
+.buttons-btn:focus {
+    border-radius: 4px;
+    background: var(--accent-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    color: var(--text-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: 0.48px;  
+}
+
