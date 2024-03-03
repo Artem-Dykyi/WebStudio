@@ -8,7 +8,7 @@
     position: relative;
     margin: 10px;
     overflow: hidden;
-    background-color: var(--text-color);
+    background-color: $text-color;
 }
 
 .todo-item > .todo-text {
@@ -18,7 +18,7 @@
     right: 0;
     width: 370px;
     /* height: 70px; */
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
@@ -47,7 +47,7 @@
 }
 
 .todo-title {
-    color: var(--texttitle-color);
+    color: $texttitle-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;

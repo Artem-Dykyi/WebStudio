@@ -1,6 +1,6 @@
 .effective {
     position: relative;
-    background:var(--background-color);  
+    background:$background-color;  
     display: flex; 
     margin-left: auto;
     margin-right: auto;
@@ -12,7 +12,7 @@
 }
 
 .effective-title {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 44px;
     font-weight: 900;
@@ -26,7 +26,7 @@
 }
 
 .effective-btn {
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -34,7 +34,7 @@
     letter-spacing: 0.96px;
     border-radius: 4px;
     border: none;
-    background: var(--accent-color);
+    background: $accent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 10px 32px;
     display: block;
@@ -48,13 +48,13 @@
 
 @keyframes effective-btn {
     0% {
-        background: var(--accent-color);
+        background: $accent-color;
     }
     25% {
         background-color: rebeccapurple;
     }
     100% {
-        background: var(--accent-color);
+        background: $accent-color;
     }
 }
 
@@ -109,12 +109,12 @@
 }
 
 .modal-svg:hover {
-    fill: var(--accent-color);
+    fill: $accent-color;
     stroke-width: 1px;
 }
 
 .modal-svg:focus {
-    fill: var(--accent-color);
+    fill: $accent-color;
     stroke-width: 1px;
 }
 
@@ -124,7 +124,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 4px;
-    background-color: var(--text-color); 
+    background-color: $text-color; 
     /* display: flex;
     align-items: center;
     justify-content: center; */
@@ -141,7 +141,7 @@
   }
 
   .efective-form-title {
-    color: var(--texttitle-color);
+    color: $texttitle-color;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -164,7 +164,7 @@
 }
 
   .effective-name {
-    color: var(--subtitle-color);
+    color: $subtitle-color;
     font-size: 12px;
     font-weight: 400;
     line-height: 1,15;
@@ -190,19 +190,19 @@
   }
 
 .effective-input:hover {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
 }
 
 .effective-input:focus {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
 }
 
 .effective-input:hover + .effective-name-svg {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 
 .effective-input:focus + .effective-name-svg {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 
 
@@ -229,7 +229,7 @@
     margin-left: 14px;
     margin-right: 7px;
 
-    color: var(--subtitle-color);
+    color: $subtitle-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px; /* 171.429% */
@@ -243,7 +243,7 @@
     margin-left: 14px;
     margin-right: 7px;
 
-    color: var(--subtitle-color);
+    color: $subtitle-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px; /* 171.429% */
@@ -266,19 +266,19 @@
 }
 
 .effective-input-last:hover {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
 }
 
 .effective-input-last:focus {
-    border: 1px solid var(--accent-color);
+    border: 1px solid $accent-color;
 }
 
 .effective-input-last:hover + .effective-name-svg {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 
 .effective-input-last:focus + .effective-name-svg {
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 
 
@@ -294,7 +294,7 @@
 
 
 .effective-link {
-    color:var(--accent-color);
+    color:$accent-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -308,8 +308,8 @@
     margin-left: auto;
     border: none;
     border-radius: 4px;
-    background: var(--accent-color);
-    color: var(--text-color);
+    background: $accent-color;
+    color: $text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 700;
