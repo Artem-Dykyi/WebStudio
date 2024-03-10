@@ -43,13 +43,15 @@
         margin-bottom: 94px;
     }
 
+    &__regular {
+        display: flex;
+        gap: 30px;
+    }
+
     &__list-icon {
         display: flex;
         gap: 30px;
     }
 }
 
-.regular {
-    display: flex;
-    gap: 30px;
-}
+

@@ -61,6 +61,7 @@
         height: 168px;
     }
     
+
     &__foto {
         padding-bottom: 20px;
         overflow: hidden;
@@ -88,12 +89,13 @@
         margin-right: 24px;
         padding-bottom: 20px;
     }
+
+    &__ovarlay-proba {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
     
 }
 
-.ovarlay-proba {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-}

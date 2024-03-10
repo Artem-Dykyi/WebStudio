@@ -8,6 +8,13 @@
         align-items: center;
     }
     
+    &__logo {
+        color:$texttitle-color;
+    }
+    
+    &__logo2 {
+        color: $text-color;
+    }
     
     
     &__title {
@@ -188,10 +195,3 @@
 
 
 
-.logo {
-    color:$texttitle-color;
-}
-
-.logo2 {
-    color: $text-color;
-}

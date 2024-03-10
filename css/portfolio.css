@@ -77,6 +77,12 @@ img {
   display: flex;
   align-items: center;
 }
+.header__logo {
+  color: #212121;
+}
+.header__logo2 {
+  color: #ffffff;
+}
 .header__title {
   color: #2196f3;
   font-family: Raleway;
@@ -209,14 +215,6 @@ img {
   letter-spacing: 0.28px;
   display: flex;
   align-items: center;
-}
-
-.logo {
-  color: #212121;
-}
-
-.logo2 {
-  color: #ffffff;
 }
 
 .buttons__list {
@@ -394,8 +392,7 @@ img {
   margin-right: 24px;
   padding-bottom: 20px;
 }
-
-.ovarlay-proba {
+.everyone__ovarlay-proba {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -416,6 +413,12 @@ img {
   width: 145px;
   height: 31px;
   margin-bottom: 20px;
+}
+.footer__logo {
+  color: #212121;
+}
+.footer__logo2 {
+  color: #ffffff;
 }
 .footer__text {
   color: #ffffff;
@@ -546,8 +549,7 @@ img {
 .footer__subscribe-wraper {
   display: flex;
 }
-
-.svg-wraper {
+.footer__svg-wraper {
   display: flex;
 }
 
