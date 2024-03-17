@@ -8,9 +8,7 @@
     }
     
     &__title {
-        color: $texttitle-color;
-        font-size: 14px;
-        font-weight: 700;
+        @include text($weight: 700, $color: $texttitle-color);
         letter-spacing: 0.42px;
         text-transform: uppercase;
         max-width: 270px;
@@ -18,10 +16,9 @@
     }
     
     &__text {
+        @include text($color: $subtitle-color);
         margin-top: 20px;
         color:$subtitle-color;
-        font-size: 14px;
-        font-weight: 400;
         line-height: 24px; /* 171.429% */
         letter-spacing: 0.42px;
         max-width: 270px;

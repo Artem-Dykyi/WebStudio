@@ -84,10 +84,10 @@ img {
   color: #ffffff;
 }
 .header__title {
-  color: #2196f3;
-  font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
+  color: #2196f3;
+  font-family: Raleway;
   letter-spacing: 0.78px;
   margin-right: 90px;
   /* animation-name: header-title;
@@ -115,15 +115,15 @@ img {
   fill: #2196f3;
 }
 .header__item {
-  color: #212121;
   font-size: 14px;
   font-weight: 500;
+  color: #212121;
   letter-spacing: 0.28px;
 }
 .header__items {
-  color: #757575;
   font-size: 14px;
   font-weight: 500;
+  color: #757575;
   letter-spacing: 0.28px;
   display: flex;
   align-items: center;
@@ -137,24 +137,27 @@ img {
   fill: #2196f3;
 }
 .header__link {
-  color: #212121;
   font-size: 14px;
   font-weight: 500;
+  color: #ffffff;
+  color: #212121;
   letter-spacing: 0.28px;
   text-decoration: none;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link:hover {
-  color: #2196f3;
   font-size: 14px;
   font-weight: 500;
+  color: #ffffff;
+  color: #2196f3;
   letter-spacing: 0.28px;
 }
 .header__link:focus {
-  color: #2196f3;
   font-size: 14px;
   font-weight: 500;
+  color: #ffffff;
+  color: #2196f3;
   letter-spacing: 0.28px;
 }
 .header__link::after {
@@ -191,9 +194,10 @@ img {
   opacity: 1;
 }
 .header__links {
-  color: #757575;
   font-size: 14px;
   font-weight: 500;
+  color: #ffffff;
+  color: #757575;
   letter-spacing: 0.28px;
   text-decoration: none;
   display: flex;
@@ -201,14 +205,18 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__links:hover {
-  color: #2196f3;
   font-size: 14px;
   font-weight: 500;
+  color: #ffffff;
+  color: #2196f3;
   letter-spacing: 0.28px;
   display: flex;
   align-items: center;
 }
 .header__links:focus {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
   color: #2196f3;
   font-size: 14px;
   font-weight: 500;
@@ -219,16 +227,16 @@ img {
 
 .buttons__list {
   display: flex;
-  gap: 8px;
   justify-content: center;
+  gap: 8px;
   padding-top: 94px;
   padding-bottom: 50px;
 }
 .buttons__btn {
-  color: #212121;
-  text-align: center;
   font-size: 16px;
   font-weight: 500;
+  color: #212121;
+  text-align: center;
   line-height: 26px; /* 162.5% */
   letter-spacing: 0.48px;
   border-radius: 4px;
@@ -239,24 +247,26 @@ img {
   animation: buttons-btn 11s linear infinite;
 }
 .buttons__btn:hover {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
   border-radius: 4px;
   background: #2196f3;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   color: #ffffff;
   text-align: center;
-  font-size: 16px;
-  font-weight: 500;
   line-height: 26px; /* 162.5% */
   letter-spacing: 0.48px;
 }
 .buttons__btn:focus {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
   border-radius: 4px;
   background: #2196f3;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   color: #ffffff;
   text-align: center;
-  font-size: 16px;
-  font-weight: 500;
   line-height: 26px; /* 162.5% */
   letter-spacing: 0.48px;
 }
@@ -358,9 +368,10 @@ img {
   transition: transform 250ms ease-in-out, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .everyone__overlay-text {
-  color: #ffffff;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 400px;
+  color: #ffffff;
+  color: #ffffff;
   line-height: 28px; /* 155.556% */
   letter-spacing: 0.54px;
   padding: 63px 24px;
@@ -373,9 +384,10 @@ img {
   display: block;
 }
 .everyone__title {
-  color: #212121;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400px;
+  color: #ffffff;
+  color: #212121;
   line-height: 36px; /* 200% */
   letter-spacing: 1.08px;
   margin-left: 24px;
@@ -383,9 +395,10 @@ img {
   padding-bottom: 4px;
 }
 .everyone__name {
-  color: #757575;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 400px;
+  color: #ffffff;
+  color: #757575;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.48px;
   margin-left: 24px;
@@ -405,10 +418,10 @@ img {
   padding-bottom: 60px;
 }
 .footer__title {
+  font-size: 26px;
+  font-weight: 500;
   color: #2196f3;
   font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
   letter-spacing: 0.78px;
   width: 145px;
   height: 31px;
@@ -421,9 +434,9 @@ img {
   color: #ffffff;
 }
 .footer__text {
-  color: #ffffff;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 400px;
+  color: #ffffff;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
   width: 231px;
@@ -432,9 +445,10 @@ img {
   margin-right: 70px;
 }
 .footer__link {
-  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.6);
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
   text-decoration: none;
@@ -448,9 +462,10 @@ img {
   margin-bottom: 9px;
 }
 .footer__svg-subtitle {
-  color: #ffffff;
   font-size: 14px;
   font-weight: 700;
+  color: #ffffff;
+  color: #ffffff;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -494,9 +509,10 @@ img {
   border-radius: 50%;
 }
 .footer__subscribe-title {
-  color: #ffffff;
   font-size: 14px;
   font-weight: 700;
+  color: #ffffff;
+  color: #ffffff;
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -504,6 +520,9 @@ img {
   padding-top: 12px;
 }
 .footer__subscribe-input {
+  font-size: 16px;
+  font-weight: 400px;
+  color: #ffffff;
   width: 350px;
   height: 50px;
   border-radius: 4px;
@@ -513,13 +532,14 @@ img {
   margin-right: 12px;
   margin-left: 93px;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
-  font-weight: 400;
   line-height: 20px; /* 125% */
   letter-spacing: 0.48px;
   padding-left: 16px;
 }
 .footer__subscribe-btn {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -527,10 +547,7 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 26px;
-  color: #ffffff;
   text-align: center;
-  font-size: 16px;
-  font-weight: 700;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.96px;
   border: none;

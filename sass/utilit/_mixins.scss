@@ -1,0 +1,12 @@
+@mixin flexbox ($aligh: center, $justify: center, $wrap: wrap ) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $aligh;
+    flex-wrap: $wrap;
+}
+
+@mixin text ($size: 14px, $weight: 400px, $color: $text-color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
