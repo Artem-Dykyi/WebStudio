@@ -1,9 +1,11 @@
 .todo {
+    @include padding-section ($t: 0);
     padding-bottom: 94px;
 
     &__list {
-        display: flex;
-        justify-content: space-around;
+        @include flexbox ($aligh: flex-start, $justify: space-around, $wrap: nowrap);
+        // display: flex;
+        // justify-content: space-around;
         
     }
     
@@ -17,11 +19,9 @@
     &__item > &__text {
         @include text($weight: 700px);
         position: absolute;
-        /* top: 224px; */
         bottom: 0;
         right: 0;
         width: 370px;
-        /* height: 70px; */
         text-align: center;
         letter-spacing: 0.42px;
         text-transform: uppercase;
@@ -42,9 +42,7 @@
     }
     
     &__title {
-        @include text($size: 36px, $weight: 700, $color: $texttitle-color);
-        text-align: center;
-        letter-spacing: 1.08px;
+        @extend %title;
         margin-bottom: 50px;
     }
     

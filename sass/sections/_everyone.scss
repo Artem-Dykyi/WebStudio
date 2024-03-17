@@ -1,9 +1,11 @@
 .everyone {
-    padding-bottom: 94px;
+    @include padding-section ($t: 0, $b: 50px);
+    // padding-bottom: 94px;
     &__list {
-        display: flex;
         gap: 30px;
-        flex-wrap: wrap;
+        @include flexbox ($aligh: flex-start, $justify:flex-start )
+        // display: flex;
+        // flex-wrap: wrap;
     }
     
     &__item {
@@ -52,7 +54,6 @@
       
     &__overlay-text {
         @include text($size: 18px);
-        color:$text-color;
         line-height: 28px; /* 155.556% */
         letter-spacing: 0.54px;
         padding: 63px 24px;
@@ -68,8 +69,7 @@
     }
     
     &__title {
-        @include text($size: 18px);
-        color:$texttitle-color;
+        @include text($size: 18px, $color:$texttitle-color);
         line-height: 36px; /* 200% */
         letter-spacing: 1.08px; 
         margin-left: 24px;  
@@ -78,10 +78,8 @@
     }
     
     &__name {
-        @include text($size: 16px);
-        color: $subtitle-color;
+        @extend %subtitle;
         line-height: 30px; /* 187.5% */
-        letter-spacing: 0.48px; 
         margin-left: 24px;  
         margin-right: 24px;
         padding-bottom: 20px;

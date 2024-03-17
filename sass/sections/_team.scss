@@ -1,25 +1,25 @@
 .team {
+    @include padding-section ();
     background:$secondbackground;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
 
     &__list {
-        display: flex;
-        justify-content: space-around;
+        @include flexbox ($aligh: flex-start, $justify: space-around, $wrap: nowrap);
+        // display: flex;
+        // justify-content: space-around;
     }
     
     &__item {
         border-radius: 0px 0px 4px 4px;
-    background: $text-color;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    padding-bottom: 30px;
+        background: $text-color;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        padding-bottom: 30px;
     }
     
     &__title {
-        @include text($size: 36px, $weight: 700, $color: $texttitle-color );
-        text-align: center;
-        letter-spacing: 1.08px;
-        margin-bottom: 50px; 
+        @extend %title; 
+        margin-bottom: 50px;
     }
     
     &__foto {
@@ -37,48 +37,50 @@
     }
     
     &__text {
-        @include text($size: 16px,  $color: $subtitle-color );
-        text-align: center;
-        letter-spacing: 0.48px;  
+        @extend %subtitle;
         margin-bottom: 16px;
-        
+        text-align: center;
     }
     &__svg-list {
-        display: flex;
-        justify-content: center;
+        @include flexbox ($aligh: flex-start, $wrap: nowrap);
+        // display: flex;
+        // justify-content: center;
         gap: 10px;
     }
     
     &__svg-item {
+        @include flexbox ($wrap: nowrap);
         width: 44px;
         height: 44px;
         background-color: rgba(255, 255, 255, 0.10);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
         border-radius: 50%;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     &__svg-item:hover {
+        @include flexbox ($wrap: nowrap);
         width: 44px;
         height: 44px;
         fill: $text-color;
         background-color: $accent-color;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
         border-radius: 50%;
     }
     
     &__svg-item:focus {
+        @include flexbox ($wrap: nowrap);
         width: 44px;
         height: 44px;
         fill: $text-color;
         background-color:$accent-color;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
         border-radius: 50%;
     }
     

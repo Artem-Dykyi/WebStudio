@@ -1,8 +1,7 @@
 .regular-customers {
     &__title {
-        @include text($size: 36px, $color:$texttitle-color);
-        text-align: center;
-        letter-spacing: 1.08px;
+        @extend %title;
+        @include padding-section ( $b: 0);
         padding-top: 94px;
     }
     
@@ -36,12 +35,14 @@
     }
 
     &__regular {
-        display: flex;
+        @include flexbox ($aligh: flex-start, $justify: flex-start, $wrap: nowrap);
+        // display: flex;
         gap: 30px;
     }
 
     &__list-icon {
-        display: flex;
+        @include flexbox ($aligh: flex-start, $justify: flex-start, $wrap: nowrap);
+        // display: flex;
         gap: 30px;
     }
 }

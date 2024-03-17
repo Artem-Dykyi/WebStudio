@@ -1,4 +1,4 @@
-@mixin flexbox ($aligh: center, $justify: center, $wrap: wrap ) {
+@mixin flexbox ($aligh: center,  $justify: center, $wrap: wrap ) {
     display: flex;
     justify-content: $justify;
     align-items: $aligh;
@@ -10,3 +10,9 @@
     font-weight: $weight;
     color: $color;
 }
+
+@mixin padding-section ($t: 94px, $b: 94px) {
+    padding-top: $t;
+    padding-bottom: $b;
+}
+
