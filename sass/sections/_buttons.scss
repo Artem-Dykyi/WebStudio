@@ -1,8 +1,8 @@
 .buttons {
 
     &__list {
-        @include flexbox ( $aligh: flex-start, $wrap: nowrap );
-        @include padding-section ($b: 50px);
+        @include flexbox( $aligh: flex-start, $wrap: nowrap );
+        @include padding-section($b: 50px);
         gap: 8px;
         // display: flex;
         // justify-content: center;

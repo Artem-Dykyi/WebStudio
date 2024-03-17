@@ -1,11 +1,11 @@
 .team {
-    @include padding-section ();
+    @include padding-section();
     background:$secondbackground;
     // padding-top: 94px;
     // padding-bottom: 94px;
 
     &__list {
-        @include flexbox ($aligh: flex-start, $justify: space-around, $wrap: nowrap);
+        @include flexbox($aligh: flex-start, $justify: space-around, $wrap: nowrap);
         // display: flex;
         // justify-content: space-around;
     }
@@ -42,14 +42,14 @@
         text-align: center;
     }
     &__svg-list {
-        @include flexbox ($aligh: flex-start, $wrap: nowrap);
+        @include flexbox($aligh: flex-start, $wrap: nowrap);
         // display: flex;
         // justify-content: center;
         gap: 10px;
     }
     
     &__svg-item {
-        @include flexbox ($wrap: nowrap);
+        @include flexbox($wrap: nowrap);
         width: 44px;
         height: 44px;
         background-color: rgba(255, 255, 255, 0.10);
@@ -61,7 +61,7 @@
     }
     
     &__svg-item:hover {
-        @include flexbox ($wrap: nowrap);
+        @include flexbox($wrap: nowrap);
         width: 44px;
         height: 44px;
         fill: $text-color;
@@ -73,7 +73,7 @@
     }
     
     &__svg-item:focus {
-        @include flexbox ($wrap: nowrap);
+        @include flexbox($wrap: nowrap);
         width: 44px;
         height: 44px;
         fill: $text-color;

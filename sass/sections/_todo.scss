@@ -1,12 +1,10 @@
 .todo {
-    @include padding-section ($t: 0);
-    padding-bottom: 94px;
+    @include padding-section($t: 0);
 
     &__list {
-        @include flexbox ($aligh: flex-start, $justify: space-around, $wrap: nowrap);
+        @include flexbox($aligh: flex-start, $justify: space-around, $wrap: nowrap);
         // display: flex;
         // justify-content: space-around;
-        
     }
     
     &__item {

@@ -4,7 +4,7 @@
     // padding-top: 94px;
 
     &__list {
-        @include flexbox ($aligh: flex-start, $justify: space-evenly, $wrap: nowrap);
+        @include flexbox($aligh: flex-start, $justify: space-evenly, $wrap: nowrap);
     }
     
     &__title {

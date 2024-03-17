@@ -1,11 +1,11 @@
 .header {
-    @include padding-section ($t: 24px, $b: 25px);
+    @include padding-section($t: 24px, $b: 25px);
     // padding-top: 24px;
     // padding-bottom: 25px;
     border: 1px solid #ECECEC;
 
     &__container {
-        @include flexbox ($justify: flex-start, $wrap: nowrap);
+        @include flexbox($justify: flex-start, $wrap: nowrap);
         // display: flex;
         // align-items: center;
     }
@@ -20,7 +20,7 @@
     
     
     &__title {
-        @include text ($size:26px, $weight:700, $color:$accent-color);
+        @include text($size:26px, $weight:700, $color:$accent-color);
         font-family: Raleway;
         letter-spacing: 0.78px;
         margin-right: 90px;
@@ -43,7 +43,7 @@
     
     
     &__list {
-        @include flexbox ($justify: left, $aligh: flex-start, $wrap: nowrap);
+        @include flexbox($justify: left, $aligh: flex-start, $wrap: nowrap);
         // display: flex;
         // justify-content: left;
         gap: 50px;
@@ -51,7 +51,7 @@
     }
     
     &__list2 {
-        @include flexbox ($justify: right, $wrap: nowrap);
+        @include flexbox($justify: right, $wrap: nowrap);
         // display: flex;
         // justify-content: right;
         // align-items: center;
@@ -78,7 +78,7 @@
     
     
     &__items {
-        @include flexbox ($justify: flex-start, $wrap: nowrap);
+        @include flexbox($justify: flex-start, $wrap: nowrap);
         @include text( $weight: 500,  $color: $subtitle-color );
         letter-spacing: 0.28px;
         // display: flex;
@@ -156,7 +156,7 @@
     
     &__links {
         @include text( $weight: 500, $color: $subtitle-color);
-        @include flexbox ($justify: flex-start, $wrap: nowrap);
+        @include flexbox($justify: flex-start, $wrap: nowrap);
         letter-spacing: 0.28px;
         text-decoration: none;
         // display: flex;
@@ -165,7 +165,7 @@
 
         &:hover {
             @include text($weight:500, $color: $accent-color);
-            @include flexbox ($justify: flex-start, $wrap: nowrap);
+            @include flexbox($justify: flex-start, $wrap: nowrap);
             letter-spacing: 0.28px; 
             // display: flex;
             // align-items: center;

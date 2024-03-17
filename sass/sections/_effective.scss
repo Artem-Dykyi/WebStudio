@@ -1,5 +1,5 @@
 .effective {
-    @include flexbox ( $aligh: flex-start, $wrap: nowrap,  $justify: flex-start );
+    @include flexbox( $aligh: flex-start, $wrap: nowrap,  $justify: flex-start );
     @include padding-section ($t: 200px, $b: 200px);
     position: relative;
     // display: flex; 
@@ -59,7 +59,7 @@
  
   
   &__backdrop {
-      @include flexbox ($wrap: nowrap);
+      @include flexbox($wrap: nowrap);
       // display: flex;
       // align-items: center;
       // justify-content: center;
@@ -74,7 +74,7 @@
   }
   
   &__modal-btn-cross {
-      @include flexbox ($wrap: nowrap);
+      @include flexbox($wrap: nowrap);
       // display: flex;
       // justify-content: center;
       // align-items: center;

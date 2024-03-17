@@ -1,7 +1,7 @@
 .regular-customers {
     &__title {
         @extend %title;
-        @include padding-section ( $b: 0);
+        @include padding-section( $b: 0);
         padding-top: 94px;
     }
     
@@ -35,13 +35,13 @@
     }
 
     &__regular {
-        @include flexbox ($aligh: flex-start, $justify: flex-start, $wrap: nowrap);
+        @include flexbox($aligh: flex-start, $justify: flex-start, $wrap: nowrap);
         // display: flex;
         gap: 30px;
     }
 
     &__list-icon {
-        @include flexbox ($aligh: flex-start, $justify: flex-start, $wrap: nowrap);
+        @include flexbox($aligh: flex-start, $justify: flex-start, $wrap: nowrap);
         // display: flex;
         gap: 30px;
     }

@@ -1,9 +1,9 @@
 .everyone {
-    @include padding-section ($t: 0, $b: 50px);
+    @include padding-section($t: 0, $b: 50px);
     // padding-bottom: 94px;
     &__list {
         gap: 30px;
-        @include flexbox ($aligh: flex-start, $justify:flex-start )
+        @include flexbox($aligh: flex-start, $justify:flex-start )
         // display: flex;
         // flex-wrap: wrap;
     }

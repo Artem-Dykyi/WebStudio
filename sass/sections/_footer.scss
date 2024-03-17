@@ -1,5 +1,5 @@
 .footer {
-    @include padding-section ($t: 60px, $b: 60px);
+    @include padding-section($t: 60px, $b: 60px);
     background:$background-color;
     // padding-top: 60px;
     // padding-bottom: 60px;
@@ -72,7 +72,7 @@
     }
     
     &__svg-item {
-        @include flexbox ( $wrap: wrap );
+        @include flexbox( $wrap: wrap );
         width: 44px;
         height: 44px;
         background-color: rgba(255, 255, 255, 0.10);
@@ -80,7 +80,7 @@
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover {
-            @include flexbox ( $wrap: wrap );
+            @include flexbox( $wrap: wrap );
             width: 44px;
             height: 44px;
             background-color: $accent-color;
@@ -88,7 +88,7 @@
         }
         
         &:focus {
-            @include flexbox ( $wrap: wrap );
+            @include flexbox( $wrap: wrap );
             width: 44px;
             height: 44px;
             background-color: $accent-color;
@@ -98,7 +98,7 @@
       
     
     &__subscribe-title {
-        @include text ( $weight:700);
+        @include text( $weight:700);
         letter-spacing: 0.42px;
         text-transform: uppercase;
         margin-bottom: 20px;
