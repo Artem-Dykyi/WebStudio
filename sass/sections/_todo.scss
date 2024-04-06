@@ -1,5 +1,10 @@
 .todo {
     @include padding-section($t: 0);
+    display: none;
+  
+      @media screen and (min-width: 1200px) {
+        display: block;
+      }
 
     &__list {
         @include flexbox($aligh: flex-start, $justify: space-around, $wrap: nowrap);

@@ -4,15 +4,37 @@
     // padding-top: 94px;
 
     &__list {
-        @include flexbox($aligh: flex-start, $justify: space-evenly, $wrap: nowrap);
+        @include flexbox($aligh: flex-start, $justify: space-evenly);
+
+        @media screen and (min-width: 768px) {
+            @include flexbox($aligh: flex-start, $justify: space-evenly);
+
+          }
+      
+          @media screen and (min-width: 1200px) {
+            @include flexbox($aligh: flex-start, $justify: space-evenly, $wrap: nowrap);
+            
+          }
     }
+
     
     &__title {
         @include text($weight: 700, $color: $texttitle-color);
+        text-align: center;
         letter-spacing: 0.42px;
         text-transform: uppercase;
-        max-width: 270px;
+        max-width: 450px;
         margin-bottom: 10px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 354px;
+            text-align: start;
+          }
+      
+          @media screen and (min-width: 1200px) {
+            text-align: start;
+            max-width: 270px;
+          }
     }
     
     &__text {
@@ -21,19 +43,40 @@
         letter-spacing: 0.42px;
 
         margin-top: 20px; 
-        max-width: 270px;
+        max-width: 450px;
         display: flex;
         gap: 30px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 354px;
+            padding-bottom: 30px;
+          }
+      
+          @media screen and (min-width: 1200px) {
+            max-width: 270px;
+            padding-bottom: 30px;
+          }
     }
+
+
     
     &__item {
-        max-width: 270px;
+        max-width: 450px;
+        @media screen and (min-width: 768px) {
+            max-width: 354px;
+          }
+      
+          @media screen and (min-width: 1200px) {
+            max-width: 270px;
+          }
     }
+
+
     &__item:nth-child(1)::before {
         content: "";
         display: block;
         background-image: url("../foto/antenna\ 1.svg");
-        width: 100%;
+        width: 450px;
         height: 120px;
         background-color: $secondbackground;
         border-radius: 4px;
@@ -41,13 +84,21 @@
         background-repeat: no-repeat;
         background-position: center;
         margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+
     }
     
     &__item:nth-child(2)::before {
         content: "";
         display: block;
         background-image: url("../foto/clock\ 1.svg");
-        width: 100%;
+        width: 450px;
         height: 120px;
         background-color: $secondbackground;
         border-radius: 4px;
@@ -55,13 +106,21 @@
         background-repeat: no-repeat;
         background-position: center;
         margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+
     }
     
     &__item:nth-child(3)::before {
         content: "";
         display: block;
         background-image: url("../foto/diagram\ 1.svg");
-        width: 100%;
+        width: 450px;
         height: 120px;
         border-radius: 4px;
         background-color: $secondbackground;
@@ -69,13 +128,21 @@
         background-repeat: no-repeat;
         background-position: center;
         margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+
     }
     
     &__item:nth-child(4)::before {
         content: "";
         display: block;
         background-image: url("../foto/astronaut\ 1.svg");
-        width: 100%;
+        width: 450px;
         height: 120px;
         border-radius: 4px;
         background-color: $secondbackground;
@@ -83,6 +150,14 @@
         background-repeat: no-repeat;
         background-position: center;
         margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+
     }
 }
 

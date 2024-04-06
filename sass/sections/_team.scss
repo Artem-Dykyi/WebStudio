@@ -5,9 +5,17 @@
     // padding-bottom: 94px;
 
     &__list {
-        @include flexbox($aligh: flex-start, $justify: space-around, $wrap: nowrap);
+        // @include flexbox($aligh: flex-start, $justify: space-around, $wrap: nowrap);
         // display: flex;
         // justify-content: space-around;
+
+        @media screen and (min-width: 768px) {
+            @include flexbox($aligh: flex-start, $justify: space-around);
+          }
+      
+          @media screen and (min-width: 1200px) {
+            @include flexbox($aligh: flex-start, $justify: space-around, $wrap: nowrap);
+          }
     }
     
     &__item {
@@ -15,6 +23,7 @@
         background: $text-color;
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
         padding-bottom: 30px;
+        margin-top: 30px;
     }
     
     &__title {
@@ -23,10 +32,21 @@
     }
     
     &__foto {
-        width: 270px;
-        height: 260px;
+        width: 450px;
+        height: 460px;
         flex-shrink: 0; 
         margin-bottom: 30px; 
+        
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 374px;
+          }
+      
+          @media screen and (min-width: 1200px) {
+            width: 270px;
+            height: 260px;
+          }
     }
     
     &__subtitle {

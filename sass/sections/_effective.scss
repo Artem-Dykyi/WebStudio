@@ -2,18 +2,15 @@
     @include flexbox( $aligh: flex-start, $wrap: nowrap,  $justify: flex-start );
     @include padding-section ($t: 200px, $b: 200px);
     position: relative;
-    // display: flex; 
     margin-left: auto;
     margin-right: auto;
-    // padding-top: 200px;
-    // padding-bottom: 200px;
     background:$background-color;  
     background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../foto/zagalkart.webp) ;
     background-repeat: no-repeat;
     background-size: cover;
 
     &__title {
-      @include text($size: 44px, $weight: 900);
+      @include text($size: 26px, $weight: 900);
       text-align: center;
       line-height: 60px; /* 136.364% */
       letter-spacing: 2.64px;
@@ -22,6 +19,11 @@
       margin-left: auto;
       max-width: 696px;
       margin-bottom: 30px;
+      
+      @media screen and (min-width: 1200px) {
+        @include text($size: 44px, $weight: 900);
+         
+       }
   }
   
   &__btn {

@@ -1,8 +1,20 @@
 .header {
-    @include padding-section($t: 24px, $b: 25px);
+    @include padding-section($t: 16px, $b: 16px);
     // padding-top: 24px;
     // padding-bottom: 25px;
     border: 1px solid #ECECEC;
+
+    @media screen and (min-width: 768px) {
+        @include padding-section($t: 26px, $b: 26px);
+        // padding-top: 26px;
+        // padding-bottom: 26px;
+      }
+  
+      @media screen and (min-width: 1200px) {
+        @include padding-section($t: 24px, $b: 25px);
+        // padding-top: 24px;
+        // padding-bottom: 25px;
+      }
 
     &__container {
         @include flexbox($justify: flex-start, $wrap: nowrap);

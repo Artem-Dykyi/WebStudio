@@ -8,9 +8,16 @@
         @include text($size:26px, $weight:500, $color:$accent-color);
         font-family: Raleway;
         letter-spacing: 0.78px;    
-        width: 145px;
-        height: 31px;
+        // width: 145px;
+        // height: 31px;
         margin-bottom: 20px;
+
+        @media screen and (min-width: 1200px) {
+            width: 145px;
+            height: 31px;
+            // margin-right: 70px;
+        }
+        
     }
     
     &__logo {
@@ -25,10 +32,22 @@
         @include text();
         line-height: 24px; /* 171.429% */
         letter-spacing: 0.42px;   
-        width: 231px;
-        height: 21px;
+        // width: 231px;
+        // height: 21px;
         margin-bottom: 9px;
-        margin-right: 70px;
+        // margin-right: 70px;
+        @media screen and (min-width: 768px) {
+            
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 231px;
+            height: 21px;
+            margin-right: 70px;
+            text-align: start;
+        }
+
+        
     }
     
     &__link {
@@ -36,16 +55,27 @@
         color: rgba(255, 255, 255, 0.60);
         line-height: 24px; /* 171.429% */
         letter-spacing: 0.42px;
-
         text-decoration: none;  
     }
     
     
     
     &__list {
-        width: 231px;
-        height: 31px;
+        // width: 232px;
+        // height: 79px;
         margin-bottom: 9px;
+        text-align: center;
+        
+
+        @media screen and (min-width: 768px) {
+            
+          }
+      
+          @media screen and (min-width: 1200px) {
+            width: 231px;
+            height: 31px;
+            text-align: start;
+          }
     }
     
     &__item {
@@ -57,7 +87,19 @@
         letter-spacing: 0.42px;
         text-transform: uppercase;
         margin-bottom: 20px;
+        margin-top: 60px;
         padding-top: 12px;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 0;
+          }
+      
+          @media screen and (min-width: 1200px) {
+            text-align: start;
+            margin-top: 0;
+            
+          }
     }
     
     &__svg {
@@ -67,8 +109,20 @@
     }
     
     &__svg-list {
+
         display: flex;
         gap: 10px;
+        justify-content: center;
+
+        @media screen and (min-width: 768px) {
+            @include flexbox()
+          }
+      
+          @media screen and (min-width: 1200px) {
+            
+          }
+
+        
     }
     
     &__svg-item {
@@ -98,12 +152,26 @@
       
     
     &__subscribe-title {
+        
+
         @include text( $weight:700);
         letter-spacing: 0.42px;
         text-transform: uppercase;
         margin-bottom: 20px;
-        margin-left: 93px;
-        padding-top: 12px;
+       
+        padding-top: 60px;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            
+          }
+      
+          @media screen and (min-width: 1200px) {
+            padding-top: 12px;
+            text-align: start;
+          }
+
+
     }
     
     &__subscribe-input {
@@ -121,11 +189,30 @@
         line-height: 20px; /* 125% */
         letter-spacing: 0.48px;
         padding-left: 16px;
+        margin-bottom: 20px;
+       
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+            margin-right: 12px;
+
+          }
+      
+          @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+            margin-right: 12px;
+
+          }
+
     }
     
     &__subscribe-btn{
         @include text($size:16px, $weight: 700);
-        @include flexbox ($justify: flex-start, $wrap: nowrap);
+        // @include flexbox ($justify: flex-start, $wrap: nowrap);
         // display: flex;
         // align-items: center;
         gap: 10px;
@@ -142,6 +229,14 @@
         border-radius: 4px;
         background: $accent-color;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width: 768px) {
+            @include flexbox ($justify: flex-start, $wrap: nowrap);
+          }
     }
     
     &__subscribe-svg {
@@ -152,12 +247,33 @@
     }
     
     &__subscribe-wraper {
-        display: flex;
+        // display: flex;
+        @media screen and (min-width: 768px) {
+            @include flexbox($aligh: flex-start, $justify: space-around);
+          }
+      
+          @media screen and (min-width: 1200px) {
+            @include flexbox($aligh: flex-start, $justify: space-around, $wrap: nowrap);
+          }
     }
 
     &__svg-wraper {
-        display: flex;
+        //  display: flex;
+        
+
+        @media screen and (min-width: 768px) {
+            @include flexbox($aligh: flex-start, $justify: space-around);
+          }
+      
+          @media screen and (min-width: 1200px) {
+            @include flexbox($aligh: flex-start, $justify: space-around, $wrap: nowrap);
+          }
     }
+
+    &__containerrrrrrrrr {
+        text-align: center;
+    }
+
 }
 
 
