@@ -55,20 +55,31 @@
     
     
     &__list {
-        @include flexbox($justify: left, $aligh: flex-start, $wrap: nowrap);
-        // display: flex;
+        display: none;
         // justify-content: left;
         gap: 50px;
         margin-right: auto;
+
+        @media screen and (min-width: 768px) {
+            @include flexbox($justify: left, $aligh: flex-start, $wrap: nowrap);
+        }
     }
     
     &__list2 {
-        @include flexbox($justify: right, $wrap: nowrap);
-        // display: flex;
+        display: none;
         // justify-content: right;
         // align-items: center;
-        gap: 50px;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width: 768px) {
+            @include flexbox($justify: flex-start, $wrap: wrap);
+            gap: 20px;
+        }
+        @media screen and (min-width: 1200px) {
+            @include flexbox($justify: right, $wrap: nowrap);
+            gap: 30px;
+        }
+
     
     }
     
@@ -101,6 +112,13 @@
         fill: $subtitle-color;
         padding-right: 10px;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width: 768px) {
+           margin-left: 96px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-left: 0;
+        }
 
         &:hover {
             fill: $accent-color;
@@ -167,13 +185,18 @@
     }
     
     &__links {
-        @include text( $weight: 500, $color: $subtitle-color);
+        @include text($size: 12px, $weight: 500, $color: $subtitle-color);
         @include flexbox($justify: flex-start, $wrap: nowrap);
         letter-spacing: 0.28px;
         text-decoration: none;
         // display: flex;
         // align-items: center;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width: 1200px) {
+            @include text($weight: 500, $color: $subtitle-color);
+            @include flexbox($justify: flex-start, $wrap: nowrap);
+        }
 
         &:hover {
             @include text($weight:500, $color: $accent-color);
@@ -191,7 +214,15 @@
             // display: flex;
             // align-items: center;
         }
-    }    
+    } 
+    
+    &__burger-btn {
+        
+        background-color: chartreuse;
+        width: 40px;
+        height: 40px;
+        border: none;
+    }
 }
 
 

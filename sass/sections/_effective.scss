@@ -9,20 +9,37 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    // width: 480px;
+    // height: 400px;
+
+    // @media screen and (min-width: 768px) {
+    //   width: 768px;
+    //   height: 400px;
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //   width: 1600px;
+    //   height: 600px;
+    // }
+
     &__title {
       @include text($size: 26px, $weight: 900);
       text-align: center;
-      line-height: 60px; /* 136.364% */
+      line-height: 162%;
       letter-spacing: 2.64px;
       text-transform: uppercase;
       margin-right: auto;
       margin-left: auto;
-      max-width: 696px;
+      max-width: 390px;
       margin-bottom: 30px;
+
+      // tyt ne 390 a 360 ale vono ne take
       
+     
       @media screen and (min-width: 1200px) {
         @include text($size: 44px, $weight: 900);
-         
+        max-width: 696px;
+        line-height: 60px; /* 136.364% */
        }
   }
   

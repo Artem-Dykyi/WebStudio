@@ -28,7 +28,14 @@
     
     &__title {
         @extend %title; 
+        font-size: 28px;
         margin-bottom: 50px;
+      
+          @media screen and (min-width: 1200px) {
+            @extend %title; 
+            font-size: 36px;
+          }
+
     }
     
     &__foto {
