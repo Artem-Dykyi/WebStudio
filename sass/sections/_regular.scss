@@ -1,5 +1,7 @@
 .regular-customers {
 
+   
+
     @media screen and (min-width: 768px) {
         @include flexbox($aligh: flex-start, $justify: space-around);
       }
@@ -76,13 +78,16 @@
     }
 
     &__list-icon {
-        @include flexbox($aligh: flex-start, $justify: flex-start);
+        @include flexbox($aligh: flex-start);
         // display: flex;
+        
         gap: 30px;
         padding-bottom: 60px;
        
         @media screen and (min-width: 768px) {
+          @include flexbox($aligh: flex-start, $justify: flex-start);
             padding-bottom: 60px;
+
           }
       
           @media screen and (min-width: 1200px) {

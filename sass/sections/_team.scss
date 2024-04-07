@@ -6,15 +6,19 @@
 
     &__list {
         // @include flexbox($aligh: flex-start, $justify: space-around, $wrap: nowrap);
-        // display: flex;
-        // justify-content: space-around;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+       
 
         @media screen and (min-width: 768px) {
-            @include flexbox($aligh: flex-start, $justify: space-around);
+            @include flexbox( $justify: space-around);
           }
       
           @media screen and (min-width: 1200px) {
             @include flexbox($aligh: flex-start, $justify: space-around, $wrap: nowrap);
+            flex-direction: row;
           }
     }
     
@@ -24,6 +28,18 @@
         box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
         padding-bottom: 30px;
         margin-top: 30px;
+        width: 450px;
+        height: 662px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 536px;
+          }
+      
+          @media screen and (min-width: 1200px) {
+            width: 270px;
+            height: 428px;
+          }
     }
     
     &__title {
