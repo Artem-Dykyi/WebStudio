@@ -84,6 +84,8 @@
         margin-left: 24px;  
         margin-right: 24px;
         padding-bottom: 4px;
+        flex-wrap: nowrap
+        
     }
     
     &__name {
@@ -92,6 +94,7 @@
         margin-left: 24px;  
         margin-right: 24px;
         padding-bottom: 20px;
+        
     }
 
     &__ovarlay-proba {
