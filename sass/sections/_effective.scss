@@ -1,6 +1,6 @@
 .effective {
     @include flexbox( $aligh: flex-start, $wrap: nowrap,  $justify: flex-start );
-    @include padding-section ($t: 200px, $b: 200px);
+    @include padding-section ($t: 118px, $b: 118px);
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -8,6 +8,10 @@
     background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../foto/zagalkart.webp) ;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media screen and (min-width: 1200px) {
+      @include padding-section ($t: 200px, $b: 200px);
+    }
 
     // width: 480px;
     // height: 400px;

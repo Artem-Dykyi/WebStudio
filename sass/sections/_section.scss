@@ -1,7 +1,11 @@
 .section {
-    @include padding-section ( $b: 118px);
+    @include padding-section ($t: 60px, $b: 60px);
     // padding-bottom: 118px;
     // padding-top: 94px;
+
+    @media screen and (min-width: 1200px) {
+        @include padding-section ( $b: 118px);
+      }
 
     &__list {
         @include flexbox($aligh: flex-start, $justify: space-evenly);

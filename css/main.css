@@ -73,7 +73,7 @@ img {
   outline: none;
 }
 
-.regular-customers__title, .team__title, .todo__title {
+.team__title, .todo__title {
   font-size: 36px;
   font-weight: 700;
   color: #212121;
@@ -362,6 +362,10 @@ img {
   z-index: 3;
   transform: translate(-50%, -50%);
   transition: visibility 2s cubic-bezier(0.4, 0, 0.2, 1), transform 3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+  widows: 100%;
+  max-width: 768px;
+  height: 764px;
 }
 .header .is-hidden {
   opacity: 0;
@@ -441,8 +445,8 @@ img {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: nowrap;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -454,6 +458,12 @@ img {
       display: flex;
       align-items: center;
   } */
+}
+@media screen and (min-width: 1200px) {
+  .effective {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .effective__title {
   font-size: 26px;
@@ -774,8 +784,14 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 118px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 118px;
+  }
 }
 .section__list {
   display: flex;
@@ -1004,9 +1020,15 @@ img {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #f5f4fa;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__list {
   display: flex;
@@ -1053,11 +1075,12 @@ img {
 }
 .team__title {
   font-size: 28px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .team__title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 .team__foto {
@@ -1171,11 +1194,16 @@ img {
 .regular-customers__title {
   padding-top: 94px;
   padding-bottom: 0;
+  text-align: center;
+  font-size: 28px;
   padding-top: 60px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .regular-customers__title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
     padding-top: 94px;
   }
 }
@@ -1198,8 +1226,6 @@ img {
 @media screen and (min-width: 1200px) {
   .regular-customers__icon {
     padding: 16px 31px;
-    margin-top: 50px;
-    margin-bottom: 94px;
   }
 }
 .regular-customers__icon:hover {
@@ -1244,7 +1270,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .regular-customers__list-icon {
-    padding-bottom: 0;
+    padding-bottom: 94px;
   }
 }
 

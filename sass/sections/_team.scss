@@ -1,8 +1,12 @@
 .team {
-    @include padding-section();
+    @include padding-section($t: 60px, $b: 60px);
     background:$secondbackground;
     // padding-top: 94px;
     // padding-bottom: 94px;
+
+    @media screen and (min-width: 1200px) {
+        @include padding-section();
+    }
 
     &__list {
         // @include flexbox($aligh: flex-start, $justify: space-around, $wrap: nowrap);
@@ -45,11 +49,12 @@
     &__title {
         @extend %title; 
         font-size: 28px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
       
           @media screen and (min-width: 1200px) {
             @extend %title; 
             font-size: 36px;
+            margin-bottom: 50px;
           }
 
     }

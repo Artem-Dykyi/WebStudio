@@ -355,6 +355,10 @@ img {
   z-index: 3;
   transform: translate(-50%, -50%);
   transition: visibility 2s cubic-bezier(0.4, 0, 0.2, 1), transform 3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+  widows: 100%;
+  max-width: 768px;
+  height: 764px;
 }
 .header .is-hidden {
   opacity: 0;
