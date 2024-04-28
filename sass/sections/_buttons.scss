@@ -1,8 +1,9 @@
 .buttons {
-
+    @include padding-section($t: 60px, $b: 40px);
+    
     &__list {
         @include flexbox( $aligh: flex-start,   $justify: flex-start, $wrap: wrap );
-        @include padding-section($t: 60px, $b: 40px);
+       
         gap: 8px;
         max-width: 333px;
         // max-width: 326px;
