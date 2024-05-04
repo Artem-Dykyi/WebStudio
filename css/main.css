@@ -464,7 +464,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   background: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../foto/zagalkart.webp);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../foto/mobile/zagalkart@1x-mobile.webp);
   background-repeat: no-repeat;
   background-size: cover;
   /* &__chek-wrapper {
@@ -472,10 +472,31 @@ img {
       align-items: center;
   } */
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .effective {
+    background-image: url(../foto/mobile/zagalkart@2x-desktop.webp);
+  }
+}
+@media screen and (min-width: 768px) {
+  .effective {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../foto/tablet/zagalkart@1x-desktop.webp);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .effective {
+    background-image: url(../foto/tablet/zagalkart@2x-desktop.webp);
+  }
+}
 @media screen and (min-width: 1200px) {
   .effective {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../foto/desktop/zagalkart@1x-desktop.webp);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .effective {
+    background-image: url(../foto/desktop/zagalkart@2x-desktop.webp);
   }
 }
 .effective__title {

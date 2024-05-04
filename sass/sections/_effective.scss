@@ -5,13 +5,42 @@
     margin-left: auto;
     margin-right: auto;
     background:$background-color;  
-    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../foto/zagalkart.webp) ;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../foto/mobile/zagalkart@1x-mobile.webp) ;
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../foto/mobile/zagalkart@2x-desktop.webp);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../foto/tablet/zagalkart@1x-desktop.webp) ;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../foto/tablet/zagalkart@2x-desktop.webp);
+    }
+  }
+
+
     @media screen and (min-width: 1200px) {
       @include padding-section ($t: 200px, $b: 200px);
+      background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../foto/desktop/zagalkart@1x-desktop.webp) ;
+
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(../foto/desktop/zagalkart@2x-desktop.webp);
+      }
     }
+
+
 
     // width: 480px;
     // height: 400px;
