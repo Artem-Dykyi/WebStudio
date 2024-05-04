@@ -5,7 +5,7 @@
     margin-left: auto;
     margin-right: auto;
     background:$background-color;  
-    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../foto/mobile/zagalkart@1x-mobile.webp) ;
+    background-image:  url(../foto/mobile/zagalkart@1x-mobile.webp) linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40));
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -13,24 +13,24 @@
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url(../foto/mobile/zagalkart@2x-desktop.webp);
+    background-image: url(../foto/mobile/zagalkart@2x-mobile.webp);
   }
 
   @media screen and (min-width: 768px) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../foto/tablet/zagalkart@1x-desktop.webp) ;
+    background-image: url(../foto/tablet/zagalkart@1x-tablet.webp);
 
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(../foto/tablet/zagalkart@2x-desktop.webp);
+      background-image: url(../foto/tablet/zagalkart@2x-tablet.webp);
     }
   }
 
 
     @media screen and (min-width: 1200px) {
       @include padding-section ($t: 200px, $b: 200px);
-      background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../foto/desktop/zagalkart@1x-desktop.webp) ;
+      background-image: url(../foto/desktop/zagalkart@1x-desktop.webp);
 
       @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -39,6 +39,8 @@
         background-image: url(../foto/desktop/zagalkart@2x-desktop.webp);
       }
     }
+
+    // linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40))
 
 
 
@@ -188,6 +190,10 @@
       letter-spacing: 0.6px;
       width: 370px;
 
+      @media screen and (min-width: 320px) {
+        width: 300px;
+      }
+
       @media screen and (min-width: 1200px) {
         width: 448px;
       }
@@ -234,6 +240,11 @@
       // @media screen and (min-width: 768px) {
       //   width: 436px;
       // }
+
+      @media screen and (min-width: 320px) {
+        width: 250px;
+      }
+
       @media screen and (min-width: 1200px) {
         width: 388px;
       }
@@ -311,8 +322,12 @@
       @media screen and (min-width: 1200px) {
         padding-right: 30px;
         width: 388px;
-
       }
+
+      @media screen and (min-width: 320px) {
+        width: 250px;
+      }
+      
   }
   
   &__input-last:hover {
